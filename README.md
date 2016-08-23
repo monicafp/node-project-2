@@ -5,7 +5,7 @@
 Using the example.csv as a base write an application that can:
 
 - Help me with a description of the program features
-- Search for a person and give me their information
+- Search for a person by email and give me their information
 - Add a person to my contact list
 - Update a person in my contact list
 - Delete a person from my contact list
