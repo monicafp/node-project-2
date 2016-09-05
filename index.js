@@ -25,15 +25,16 @@ if (argument === "deleteContact"){
 };
 
 if (argument === "totalContacts"){
-  fs.readFile('./example.csv', function(error, data){
-    if (error) {
-      throw error;
-    }
-    csv.parse(data, function(error, data){
-      if (error) {
-        throw error;
-      }
-      console.log(totalContacts(data));
-    });
-  });
+  console.log(totalContacts());
+  // fs.readFile('./example.csv', function(error, data){
+  //   if (error) {
+  //     throw error;
+  //   }
+  //   csv.parse(data, function(error, data){
+  //     if (error) {
+  //       throw error;
+  //     }
+  //     console.log(totalContacts(data));
+  //   });
+  // });
 };
