@@ -1,4 +1,5 @@
 var prompt = require('prompt-sync')();
+var fs = require('fs');
 
 function deleteContact(data) {
   var contactEmail = prompt("Enter contact\'s email to delete: ");
@@ -7,8 +8,8 @@ function deleteContact(data) {
     if (data[i][3] === contactEmail) {
       found = true;
       console.log("Contact Deleted");
-      return data.splice(i, 1);
-      // writeFile?
+      data.splice(i, 1);
+      return fs.writeFile('example.csv', data);
     }
   }
   if (!found) {
