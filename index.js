@@ -38,7 +38,7 @@ function writeCsv(filename, data) {
 
 // Find Contact
 function findContact(data, email) {
-  for (var i = 1; i < data.length; i++) {
+  for (var i = 0; i < data.length; i++) {
     if (data[i].email === email) {
       return i;
     }
@@ -46,12 +46,12 @@ function findContact(data, email) {
   return -1;
 };
 
-// Contact not found
+// For a contact who is not in the database
 function notFound() {
   console.log("Contact not found.");
 }
 
-// Contact found
+// For a contact who is already in the database
 function found() {
   console.log("Contact already exists in database.")
 }
@@ -91,7 +91,7 @@ function help() {
 
 // "count"
 function showCount(data) {
-  console.log(data.length - 1);
+  console.log(data.length);
 }
 
 // "add"
