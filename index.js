@@ -3,7 +3,7 @@ var functions = require('./functions');
 
 switch(process.argv[2]) {
   case 'help':
-    console.log(help());
+    console.log(functions.help());
     process.exit(-1);
     break;
 
