@@ -52,7 +52,7 @@ function notFound() {
 
 // For a contact who is already in the database
 function found() {
-  console.log("Contact already exists in database.")
+  console.log("Contact already exists in database.");
 }
 
 // Request Info
